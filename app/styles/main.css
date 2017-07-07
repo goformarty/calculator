@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@font-face {
+    font-family: 'digital'; /*a name to be used later*/
+    src: url('../fonts/digital-7/digital-7.ttf'); /*URL to font*/
+}
 
 * {
   box-sizing: border-box;
@@ -57,27 +61,14 @@ button {
 }
 
 .r-2 {
-  height: 35px;
-  background-color: grey;
+  height: 40px;
+  /*background-color: grey;*/
 }
 
 .r-3 {
   height: 185px;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.onoff {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.onoff button {
-  height: 16px;
-  width: 16px;
-  border-radius: 8px;
-  margin-right: 10px;
 }
 
 .buttons-row {
@@ -113,8 +104,6 @@ button {
   background-color: #e2e2e2;
   display: flex;
   align-items: center;
-
-
 }
 
 #screen input {
@@ -127,7 +116,41 @@ button {
   padding: 10px;
   text-align: right;
   box-shadow: inset 4px 4px 3px 0px #929c8b;
+  font-family: 'digital-7', sans-serif;
+}
 
+.r-2 button {
+  background-color: #f3f3f3;
+}
+
+
+.onoff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.onoff button {
+  height: 10px;
+  width: 8px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+#ongreen {
+  height: 16px;
+  width: 16px;
+  background-color: #86ab78;
+  box-shadow: inset 2px 2px 3px 0px #cef3c0;
+  border: 1px #e2e2e2 solid;
+}
+
+#offred {
+  height: 16px;
+  width: 16px;
+  background-color: #d05959;
+  box-shadow: inset 2px 2px 3px 0px #ffbbbb;
+  border: 1px #e2e2e2 solid;
 }
 
 .r-3 button {
@@ -141,7 +164,7 @@ button {
 }
 
 button.btn-brown {
-    color: #9a8c78;
+    color: #9a826d;
 }
 
 button.btn-green {
@@ -149,7 +172,7 @@ button.btn-green {
 }
 
 button.btn-yellow {
-    background-color: #fdf25d;
+    background-color: #f9ea73;
     box-shadow: inset -1px -1px 4px 0px #ccc147;
 }
 
