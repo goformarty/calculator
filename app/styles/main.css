@@ -34,9 +34,10 @@ html, body {
   flex-direction: column;
   height: 415px;
   width: 235px;
-  background-color: #eee;
+  background-color: #f3f3f3;
   padding: 26px 23px 37px;
   border-radius: 7px 7px 25px 25px;
+  box-shadow: 6px 9px 11px 1px #cacaca;
 }
 
 .row {
@@ -46,7 +47,8 @@ html, body {
 
 .r-1 {
   height: 65px;
-  background-color: grey;
+  border-radius: 2px;
+  background-color: #e2e2e2;
 }
 
 .r-2 {
@@ -83,6 +85,40 @@ html, body {
   height: 28px;
   width: 28px;
   border-radius: 100%;
+}
+
+#screen {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen-border {
+  height: 54px;
+  width: 177px;
+  background-color: #c3c3c3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.screen-border div {
+  background-color: #e2e2e2;
+  display: flex;
+  align-items: center;
+}
+
+#screen input {
+  display: inline-block;
+  height: 30px;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  background-color: #aab5a3;
+  padding: 10px;
+  text-align: right;
 }
 
 /*#screen {
