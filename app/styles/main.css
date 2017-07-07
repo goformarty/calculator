@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +15,10 @@ html, body {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
+}
 
+button {
+  border: none;
 }
 
 .container {
@@ -58,7 +63,6 @@ html, body {
 
 .r-3 {
   height: 185px;
-  background-color: grey;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -102,12 +106,15 @@ html, body {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  box-shadow: inset 4px 2px 3px 0px #b7b7b7;
 }
 
 .screen-border div {
   background-color: #e2e2e2;
   display: flex;
   align-items: center;
+
+
 }
 
 #screen input {
@@ -119,6 +126,31 @@ html, body {
   background-color: #aab5a3;
   padding: 10px;
   text-align: right;
+  box-shadow: inset 4px 4px 3px 0px #929c8b;
+
+}
+
+.r-3 button {
+  color: #737373;
+  background-color: #fcfcfc;
+  border: 1px #c7c7c7 solid;
+  box-shadow: inset -1px -1px 4px 0px #ccc;
+  /*padding-bottom: 1px;*/
+  color: #888;
+  font-family: 'Roboto', sans-serif;
+}
+
+button.btn-brown {
+    color: #9a8c78;
+}
+
+button.btn-green {
+    color: #738861;
+}
+
+button.btn-yellow {
+    background-color: #fdf25d;
+    box-shadow: inset -1px -1px 4px 0px #ccc147;
 }
 
 /*#screen {
