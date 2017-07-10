@@ -26,9 +26,11 @@
     <div class="container">
       <div id="calculator">
         <div class="row r-1">
-          <div id="screen">
-            <div class="screen-border">
-                <input type="text" name="" value="0" id="displayValue">
+          <div id="screen-container">
+            <div id="screen-border">
+              <div>
+                <div id="screen">0</div>
+              </div>
             </div>
           </div>
         </div>
@@ -51,39 +53,39 @@
             <button class="btn-green" type="button" name="button">M-</button>
             <button class="btn-green" type="button" name="button">MR</button>
             <button class="btn-green" class="btn-green"type="button" name="button">MC</button>
-            <button class="btn-green" type="button" name="button">+/-</button>
+            <button class="btn-green" type="button" name="button" id="negate" onclick="operator('negate')">+/-</button>
           </div>
           <!-- 2 row -->
           <div class="buttons-row">
             <button class="btn-brown" type="button" name="button">&#8710;%</button>
-            <button type="button" name="button">7</button>
-            <button type="button" name="button">8</button>
-            <button type="button" name="button">9</button>
-            <button class="btn-brown" type="button" name="button">&#247;</button>
+            <button type="button" name="button" id="seven" onclick="press_button(7)">7</button>
+            <button type="button" name="button" id="eight" onclick="press_button(8)">8</button>
+            <button type="button" name="button" id="nine" onclick="press_button(9)">9</button>
+            <button class="btn-brown" type="button" name="button" id="divide" onclick="operator('divide')">&#247;</button>
           </div>
           <!-- 3 row -->
           <div class="buttons-row">
             <button class="btn-brown" type="button" name="button">&#8730;</button>
-            <button type="button" name="button">4</button>
-            <button type="button" name="button">5</button>
-            <button type="button" name="button">6</button>
-            <button class="btn-brown" type="button" name="button">&#215;</button>
+            <button type="button" name="button" id="four" onclick="press_button(4)">4</button>
+            <button type="button" name="button" id="five" onclick="press_button(5)">5</button>
+            <button type="button" name="button" id="six" onclick="press_button(6)">6</button>
+            <button class="btn-brown" type="button" name="button" id="multiply" onclick="operator('multiply')">&#215;</button>
           </div>
           <!-- 3 row -->
           <div class="buttons-row">
             <button class="btn-brown" type="button" name="button">%</button>
-            <button type="button" name="button">1</button>
-            <button type="button" name="button">2</button>
-            <button type="button" name="button">3</button>
-            <button class="btn-brown" type="button" name="button">-</button>
+            <button type="button" name="button" id="one" onclick="press_button(1)">1</button>
+            <button type="button" name="button" id="two" onclick="press_button(2)">2</button>
+            <button type="button" name="button" id="three" onclick="press_button(3)">3</button>
+            <button class="btn-brown" type="button" name="button" id="subtract" onclick="operator('subtract')">-</button>
           </div>
           <!-- 3 row -->
           <div class="buttons-row">
-            <button class="btn-brown" type="button" name="button">CE</button>
-            <button type="button" name="button">0</button>
-            <button type="button" name="button">&#8729;</button>
-            <button class="btn-brown btn-yellow" type="button" name="button">=</button>
-            <button class="btn-brown" type="button" name="button">+</button>
+            <button class="btn-brown" type="button" name="button" id="clear" onclick="reset()">CE</button>
+            <button type="button" name="button" id="zero" onclick="press_button(0)">0</button>
+            <button type="button" name="button" id="decimal" onclick="press_button('.')">&#8729;</button>
+            <button class="btn-brown btn-yellow" type="button" name="button" id="equals" onclick="operator('equals')">=</button>
+            <button class="btn-brown" type="button" name="button" id="add" onclick="operator('add')">+</button>
           </div>
         </div>
 

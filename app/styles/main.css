@@ -84,14 +84,15 @@ button {
   border-radius: 100%;
 }
 
-#screen {
+#screen-container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
-.screen-border {
+#screen-border {
   height: 54px;
   width: 177px;
   background-color: #c3c3c3;
@@ -108,7 +109,7 @@ button {
   align-items: center;
 }
 
-#screen input {
+#screen {
   display: inline-block;
   height: 30px;
   width: 150px;
