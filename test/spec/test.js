@@ -20,11 +20,5 @@
          expect(Calc.sum([2,4,3])).to.equal(9);
        });
     });
-    describe('various math operations', function () {
-      var Calc = new Calculator;
-      it('it should add two numbers and substract the third', function() {
-        expect(Calc.)
-      });
-    });
   });
 })();
