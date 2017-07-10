@@ -10,10 +10,10 @@
         expect(subtract(9,4)).to.equal(5);
       });
       it('should multiply two numbers and return the result', function () {
-        expect(multiply(2,6)).to.equal(12);
+        expect(multiply(2,6)).to.equal(12.00);
        });
        it('should divide two numbers and return the result', function () {
-         expect(divide(24,8)).to.equal(3);
+         expect(divide(24,8)).to.equal(3.00);
        });
     });
   });

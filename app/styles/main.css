@@ -190,6 +190,11 @@ button.btn-yellow {
     box-shadow: inset -1px -1px 4px 0px #ccc147;
 }
 
+button.btn-yellow:hover {
+    background-color: #d4c659;
+}
+
+
 /*#screen {
 height: 65px;
 width: 100%;
