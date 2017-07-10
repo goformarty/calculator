@@ -23,6 +23,8 @@ html, body {
 
 button {
   border: none;
+  user-select: none;
+  outline: none;
 }
 
 .container {
@@ -161,6 +163,17 @@ button {
   /*padding-bottom: 1px;*/
   color: #888;
   font-family: 'Roboto', sans-serif;
+  transition: 0.5s;
+}
+
+.r-3 button:hover {
+  background-color: #e8e8e8;
+}
+
+.r-3 button:active {
+  background-color: #ffffff;
+    box-shadow: inset 0px 0px 5px 3px #f7f7f7;
+    border: 1px #d8d8d8 solid;
 }
 
 button.btn-brown {
