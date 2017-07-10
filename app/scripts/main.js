@@ -3,23 +3,23 @@ n2 = 0,
 next_operator = '',
 i = 0;
 
-var add = function(n1, n2) {
+function add(n1, n2) {
   return (+n1 + +n2);
 };
 
-var subtract = function(n1, n2) {
+function subtract(n1, n2) {
   return (+n1 - +n2);
 };
 
-var multiply = function(n1, n2) {
+function multiply (n1, n2) {
   return (+n1 * +n2).toFixed(2);
 };
 
-var divide = function(n1, n2) {
+function divide(n1, n2) {
   return (+n1 / +n2).toFixed(2);
 };
 
-var press_button = function(curr_btn){
+function press_button(curr_btn){
   if (n1.length != 0 && i == 0) {
     clear_display();
     display(curr_btn);
@@ -30,7 +30,7 @@ var press_button = function(curr_btn){
   }
 };
 
-var display = function(number) {
+function display(number) {
   var display_number = document.getElementById("screen");
   if (i === 1) {
     display_number.innerHTML = "";
@@ -46,11 +46,11 @@ var display = function(number) {
   }
 };
 
-var clear_display = function() {
+function clear_display() {
   document.getElementById("screen").innerHTML = "";
 };
 
-var reset = function() {
+function reset() {
   document.getElementById("screen").innerHTML = "";
   n1 = 0;
   n2 = 0;
@@ -58,7 +58,7 @@ var reset = function() {
   i = 0;
 };
 
-var get_number = function() {
+function get_number() {
   if (n1 === 0) {
     n1 = document.getElementById("screen").innerHTML;
   } else {
@@ -66,7 +66,7 @@ var get_number = function() {
   }
 };
 
-var operator = function(sign) {
+function operator(sign) {
   if (sign === "equals") {
     get_result();
     n1 = 0
@@ -83,7 +83,7 @@ var operator = function(sign) {
   }
 };
 
-var get_result = function() {
+function get_result() {
   get_number();
   if (next_operator === "add") {
     clear_display();
@@ -104,7 +104,7 @@ var get_result = function() {
   }
 };
 
-var calculate_step = function() {
+function calculate_step() {
   if (n1 != 0 && n2 != 0) {
     get_result();
     n1 = document.getElementById("screen").innerHTML;
